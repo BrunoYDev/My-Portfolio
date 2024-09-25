@@ -69,7 +69,7 @@ export const Links = styled.div`
 
     width: 90%;
 
-    justify-content: ${(props) => (props.active == 'true' ? 'space-around' : 'start')};
+    justify-content: ${(props) => (props.$active ? 'space-around' : 'start')};
 
 `
 
@@ -79,6 +79,7 @@ export const Item = styled.div`
     align-items: center;
     gap: 8px;
 
+    margin-left: ${(props) => (props.$active ? '0' : '13px')};
 `
 
 export const StyledImage = styled.img`
