@@ -12,7 +12,7 @@ import {
 import profilePic from "../../assets/profile.jpg";
 
 function Header() {
-  const [activeItem, setActiveItem] = useState(0);
+  const [activeItem, setActiveItem] = useState(null);
 
   const handleItemClick = (index) => {
     setActiveItem(index);
