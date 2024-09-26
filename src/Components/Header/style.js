@@ -98,6 +98,7 @@ export const NavbarItem = styled.p`
 
     &:hover{
         cursor: pointer;
+        opacity: 50%;
     }
 `
 
