@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin: 0;
     padding: 0;
     min-height: 430px;
-    width: 100%;
+    width: 88%;
     background-color: #d9d9d924;
 
     border-radius: 10px;
@@ -34,10 +34,9 @@ export const CardContainer = styled.ul`
     border-radius: 10px;
 
     display: flex;
-    overflow-x: auto;
-
+    overflow-x: scroll;
    
     padding-bottom: 5px;
-    gap: 25px;
+    gap: 20px;
 
 `

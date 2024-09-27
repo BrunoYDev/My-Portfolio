@@ -31,7 +31,7 @@ function Header() {
 
         <Navbar>
 
-          {["Home", "More", "Contacts"].map((item, index) => (
+          {["Home", "Contacts"].map((item, index) => (
 
             <NavbarItem
               key={index}
