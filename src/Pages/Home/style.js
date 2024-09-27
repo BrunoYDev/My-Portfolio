@@ -52,6 +52,7 @@ export const DownloadCV = styled.button`
 
   &:hover{
     cursor: pointer;
+    opacity: 50%;
   }
 
   &:active{
