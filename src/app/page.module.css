@@ -1,0 +1,385 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.terminalWindow {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #00ff00;
+  background-color: #000;
+}
+.terminalHeader {
+  background-color: #333;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #00ff00;
+}
+
+.terminalButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminalTitle {
+  color: #ccc;
+  margin: 0 auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.terminalBody {
+  padding: 1.5rem;
+}
+
+.bootText {
+  margin: 0;
+  line-height: 1.5;
+  color: #00bb00;
+  font-size: 0.9rem;
+}
+
+.typeAnimationContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.typeAnimationContainer h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.blinkingCursor {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #00ff00;
+  animation: bounce 2s infinite;
+}
+
+.scrollIndicator span {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.scrollIndicator .arrow {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.scrollContainer {
+  overflow-y: scroll;
+}
+
+.projectsSection {
+  width: 100%;
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00FF00;
+  padding: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.sectionTitle::after {
+  content: "_";
+  animation: blink 1s step-start 0s infinite;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  border: 2px solid #00ff00;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.actionButton:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.projectCard h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.projectCard p {
+  margin: 0;
+  color: #ccc;
+  flex-grow: 1;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack span {
+  background-color: #004d00;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00FF00;
+  padding: 2rem;
+}
+
+.avatar {
+  border: 2px solid #00ff00;
+  flex-shrink: 0;
+}
+
+.aboutText p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.readMoreLink {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contactSection {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00FF00;
+  padding: 2rem;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contactLinks a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes bracket-flicker-left {
+  0%,
+  100% {
+    content: "[";
+  }
+  25% {
+    content: "{";
+  }
+  50% {
+    content: "(";
+  }
+  75% {
+    content: "<";
+  }
+}
+
+@keyframes bracket-flicker-right {
+  0%,
+  100% {
+    content: "]";
+  }
+  25% {
+    content: "}";
+  }
+  50% {
+    content: ")";
+  }
+  75% {
+    content: ">";
+  }
+}
+
+.contactSection {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.contactLinks a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #00ff00;
+  position: relative;
+  padding: 5px 25px;
+  transition: all 0.2s ease;
+}
+
+.contactLinks a::before,
+.contactLinks a::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: normal;
+}
+
+.contactLinks a::before {
+  content: "[";
+  left: 0;
+  animation: bracket-flicker-left 3s infinite;
+}
+
+.contactLinks a::after {
+  content: "]";
+  right: 0;
+  animation: bracket-flicker-right 3s infinite;
+  animation-delay: 0.1s;
+}
+
+.contactLinks a:hover {
+  background-color: #00ff00;
+  color: #000;
+}
+
+.contactLinks a:hover::before,
+.contactLinks a:hover::after {
+  animation-duration: 0.5s;
+  color: #000;
+}
+
+.cvContainer {
+  margin-top: 2.5rem;
+}
+
+.downloadButton {
+  background-color: #00FF00;
+  color: #000;
+  border: 2px solid #00FF00;
+  padding: 12px 25px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: transparent;
+  color: #00FF00;
+}
+@media (max-width: 768px) {
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 0rem;
+  }
+
+  .terminalTitle{
+    font-size: 0.8rem;
+  }
+
+  .contactSection {
+    padding: 2rem 0rem;
+  }
+
+  .avatar {
+    margin-bottom: 1.5rem;
+  }
+}
