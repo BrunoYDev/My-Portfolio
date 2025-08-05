@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  color: #ccc;
+  line-height: 1.8;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container > * {
+  grid-area: 1 / 1;
+  margin: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.realText {
+  opacity: 0;
+}
+
+.realText.visible {
+  opacity: 1;
+}
