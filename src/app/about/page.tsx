@@ -44,7 +44,7 @@ export default function AboutPage() {
         style={{ "--index": 3 } as React.CSSProperties}
       >
         <h2 className={styles.sectionTitle}>[ CORE_PHILOSOPHY ]</h2>
-        <TypingParagraph text="My focus is on backend development because I'm driven by logic and architecture. I enjoy designing the systems that power applications, ensuring data integrity, performance, and security. For me, a beautifully architected API is as compelling as a stunning user interface." />
+        <TypingParagraph text="My focus is on backend development because I&apos;m driven by logic and architecture. I enjoy designing the systems that power applications, ensuring data integrity, performance, and security. For me, a beautifully architected API is as compelling as a stunning user interface." />
       </section>
 
       <section
@@ -103,7 +103,7 @@ export default function AboutPage() {
         <h2 className={styles.sectionTitle}>[ LOGS & MUSINGS ]</h2>
         <TypingLinkParagraph fullText={finalParagraphText}>
           For more on my personal philosophy and the inspiration behind my
-          blog's Y2K design, you can{" "}
+          blog&apos;s Y2K design, you can{" "}
           <Link
             href="https://brunorgarciablog.vercel.app/about"
             target="_blank"
