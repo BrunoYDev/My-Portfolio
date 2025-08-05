@@ -1,0 +1,134 @@
+.container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+}
+
+.mainTitle {
+  font-family: inherit;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: #00ff00;
+  margin-bottom: 3rem;
+}
+.mainTitle::after {
+  content: "_";
+  animation: blink 1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #00ff00;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.skillsGrid h3 {
+  color: #00ff00;
+  border-bottom: 1px solid #00ff00;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.skillsGrid ul {
+  list-style-type: "» ";
+  padding-left: 1.2rem;
+  margin: 0;
+  color: #ccc;
+}
+
+.skillsGrid li {
+  margin-bottom: 0.5rem;
+}
+
+.externalLink {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.container > * {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section p {
+  color: #ccc;
+  line-height: 1.8;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.mainTitle {
+  opacity: 0;
+  animation: fadeInTitle 0.8s ease-out forwards;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homeButton {
+  background-color: transparent;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards 0.3s;
+}
+
+.homeButton:hover {
+  background-color: #00ff00;
+  color: #000;
+}
