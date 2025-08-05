@@ -102,7 +102,6 @@ export default function HomePage() {
                 speed={40}
                 repeat={Infinity}
               />
-              <span className={styles.blinkingCursor}>_</span>
             </div>
           </div>
         </div>
