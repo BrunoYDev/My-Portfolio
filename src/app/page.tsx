@@ -172,8 +172,7 @@ export default function HomePage() {
             exploring the intersection of modern technology and retro
             aesthetics. This space is a testament to that passion.
             <Link
-              href="https://brunorgarciablog.vercel.app/about"
-              target="_blank"
+              href="/about"
               className={styles.readMoreLink}
             >
               Read the full story...
