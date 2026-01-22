@@ -85,20 +85,14 @@ export default function AboutPage() {
             </ul>
           </div>
           <div style={{ "--index": 8 } as React.CSSProperties}>
-            <h3>Databases</h3>
+            <h3>Databases & Tools</h3>
             <ul>
               <li>PostgreSQL</li>
               <li>SQLite</li>
               <li>MySQL</li>
               <li>Redis</li>
               <li>Supabase</li>
-            </ul>
-          </div>
-          <div style={{ "--index": 9 } as React.CSSProperties}>
-            <h3>Tools & Platforms</h3>
-            <ul>
               <li>Git & Github</li>
-              <li>Google Cloud Platform (GCP)</li>
               <li>Docker</li>
               <li>Vercel</li>
               <li>Linux</li>
