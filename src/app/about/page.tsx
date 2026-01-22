@@ -33,10 +33,10 @@ export default function AboutPage() {
           height={100}
           className={styles.avatar}
           unoptimized
-          style={{ "--index": 0, marginLeft: '10px' } as React.CSSProperties}
+          style={{ "--index": 0, marginLeft: "10px" } as React.CSSProperties}
         />
         <h2 className={styles.sectionTitle}>[ STATUS ]</h2>
-        <TypingParagraph text="Backend Developer with a passion for building robust, scalable systems. I thrive on solving complex logical problems and enjoy creating efficient, clean code. Currently seeking my first professional opportunity to contribute to a challenging and innovative team." />
+        <TypingParagraph text="Computer Science Student & Developer exploring the logic behind everything. While I build scalable backend systems professionally, my passion extends to Game Development with Godot, where I craft digital worlds. Constantly refactoring my skills to become an Engine Engineer." />
       </section>
 
       <section
@@ -44,7 +44,7 @@ export default function AboutPage() {
         style={{ "--index": 3 } as React.CSSProperties}
       >
         <h2 className={styles.sectionTitle}>[ CORE_PHILOSOPHY ]</h2>
-        <TypingParagraph text="My focus is on backend development because I&apos;m driven by logic and architecture. I enjoy designing the systems that power applications, ensuring data integrity, performance, and security. For me, a beautifully architected API is as compelling as a stunning user interface." />
+        <TypingParagraph text="Whether it's a REST API or a kinematic character controller, I am driven by the architecture behind the scenes. I believe that styling is temporary, but robust logic is eternal. My goal is to master the engines that make things run, prioritizing performance, clean code, and system integrity." />
       </section>
 
       <section
@@ -64,6 +64,17 @@ export default function AboutPage() {
             </ul>
           </div>
           <div style={{ "--index": 6 } as React.CSSProperties}>
+            <h3>Game Dev & Art</h3>
+            <ul>
+              <li>Godot Engine</li>
+              <li>GDScript</li>
+              <li>Aseprite</li>
+              <li>Blender</li>
+              <li>Pixel Art</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+          <div style={{ "--index": 7 } as React.CSSProperties}>
             <h3>Backend</h3>
             <ul>
               <li>Spring Boot</li>
@@ -73,7 +84,7 @@ export default function AboutPage() {
               <li>REST APIs</li>
             </ul>
           </div>
-          <div style={{ "--index": 7 } as React.CSSProperties}>
+          <div style={{ "--index": 8 } as React.CSSProperties}>
             <h3>Databases</h3>
             <ul>
               <li>PostgreSQL</li>
@@ -83,7 +94,7 @@ export default function AboutPage() {
               <li>Supabase</li>
             </ul>
           </div>
-          <div style={{ "--index": 8 } as React.CSSProperties}>
+          <div style={{ "--index": 9 } as React.CSSProperties}>
             <h3>Tools & Platforms</h3>
             <ul>
               <li>Git & Github</li>
@@ -98,7 +109,7 @@ export default function AboutPage() {
 
       <section
         className={styles.section}
-        style={{ "--index": 9 } as React.CSSProperties}
+        style={{ "--index": 10 } as React.CSSProperties}
       >
         <h2 className={styles.sectionTitle}>[ LOGS & MUSINGS ]</h2>
         <TypingLinkParagraph fullText={finalParagraphText}>

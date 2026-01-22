@@ -93,9 +93,11 @@ export default function HomePage() {
                 sequence={[
                   "Bruno Rodrigues Garcia",
                   2000,
-                  "Backend Developer",
+                  "Game Developer",
                   2000,
-                  "Fullstack Developer",
+                  "Aspiring Engine Engineer",
+                  2000,
+                  "Backend Developer",
                   5000,
                 ]}
                 wrapper="h1"
@@ -168,13 +170,11 @@ export default function HomePage() {
         <div className={styles.aboutText}>
           <h2 className={styles.sectionTitle}>&gt; whoami</h2>
           <p>
-            Backend developer with a Y2K soul. I build robust systems and love
-            exploring the intersection of modern technology and retro
-            aesthetics. This space is a testament to that passion.
-            <Link
-              href="/about"
-              className={styles.readMoreLink}
-            >
+            Developer exploring the boundaries between Backend Systems and Game
+            Engines. I build robust logic and love exploring the intersection of
+            modern tech and Y2K aesthetics. This space is a testament to that
+            passion.
+            <Link href="/about" className={styles.readMoreLink}>
               Read the full story...
             </Link>
           </p>
