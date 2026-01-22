@@ -191,6 +191,13 @@ export default function HomePage() {
           >
             LinkedIn
           </a>
+           <a
+            href="https://ykkos2.itch.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Itch.io
+          </a>
           <a
             href="https://github.com/BrunoYDev"
             target="_blank"
