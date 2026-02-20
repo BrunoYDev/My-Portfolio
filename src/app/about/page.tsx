@@ -7,7 +7,7 @@ import { TypingLinkParagraph } from "@/components/TypingLinkParagraph/TypingLink
 
 export default function AboutPage() {
   const finalParagraphText =
-    "For more on my personal philosophy and the inspiration behind my blog's Y2K design, you can access the archive here.";
+    "If you want to know more about what I think and the ideas behind my blog, check out my archive.";
 
   return (
     <main className={styles.container}>
@@ -36,7 +36,7 @@ export default function AboutPage() {
           style={{ "--index": 0, marginLeft: "10px" } as React.CSSProperties}
         />
         <h2 className={styles.sectionTitle}>[ STATUS ]</h2>
-        <TypingParagraph text="Computer Science Student & Developer exploring the logic behind everything. While I build scalable backend systems professionally, my passion extends to Game Development with Godot, where I craft digital worlds. Constantly refactoring my skills to become an Engine Engineer." />
+        <TypingParagraph text="I'm a Computer Science student and developer who loves understanding how things work. I work with backend systems day to day, but I'm really into game development with Godot in my free time. Pretty much always trying to level up my skills and hopefully become a solid game engineer." />
       </section>
 
       <section
@@ -44,7 +44,7 @@ export default function AboutPage() {
         style={{ "--index": 3 } as React.CSSProperties}
       >
         <h2 className={styles.sectionTitle}>[ CORE_PHILOSOPHY ]</h2>
-        <TypingParagraph text="Whether it's a REST API or a kinematic character controller, I am driven by the architecture behind the scenes. I believe that styling is temporary, but robust logic is eternal. My goal is to master the engines that make things run, prioritizing performance, clean code, and system integrity." />
+        <TypingParagraph text="What really gets me excited is the stuff you don't see - whether it's an API or a game system. I think clean code and good design matter way more than making things look fancy. I want to get really good at building systems that actually work well and can handle a lot." />
       </section>
 
       <section
@@ -114,7 +114,7 @@ export default function AboutPage() {
             target="_blank"
             className={styles.externalLink}
           >
-            access the archive here
+            check out my blog here
           </Link>
           .
         </TypingLinkParagraph>

@@ -98,7 +98,7 @@ export default function HomePage() {
                   "Aspiring Engine Engineer",
                   2000,
                   "Backend Developer",
-                  5000,
+                  2000,
                 ]}
                 wrapper="h1"
                 speed={40}
@@ -170,10 +170,7 @@ export default function HomePage() {
         <div className={styles.aboutText}>
           <h2 className={styles.sectionTitle}>&gt; whoami</h2>
           <p>
-            Developer exploring the boundaries between Backend Systems and Game
-            Engines. I build robust logic and love exploring the intersection of
-            modern tech and Y2K aesthetics. This space is a testament to that
-            passion.
+            I'm a developer who works on backend systems and game engines. I really care about building things the right way - clean code and solid architecture actually matter to me. You'll probably notice I mix modern tech with that Y2K vibe, and yeah, this whole site is kind of proof of that.
             <Link href="/about" className={styles.readMoreLink}>
               Read the full story...
             </Link>
